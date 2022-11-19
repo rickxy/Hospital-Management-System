@@ -1,0 +1,71 @@
+/*-------------------------------------------------------------
+    Template Name:
+    Template URL:
+    Author Name:
+    Author URL:
+    Version:
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------
+    1. Author CSS
+    2. Preloader
+    3. Main Menu
+    4. Header
+    5. Banner
+    6. Feature
+    7. Welcome
+    8. Department
+    9. Patient
+    10. Specialist
+    11. Hotline
+    12. News
+    13. Footer
+    14. Departments Page
+    15. About 
+    16. Blog Home
+    17. Blog Details
+    18. Contact
+    19. Elements
+    20. Button
+    21. Form
+    22. Other
+--------------------------------------------------------------*/
+
+// Compass Framework
+@import 'compass';
+
+// Setting
+@import 'setting/variable';
+@import 'setting/mixin';
+
+// Base
+@import 'base/base';
+
+// Google Font
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
+
+// Layout
+@import 'layout/preloader';
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/feature';
+@import 'layout/welcome';
+@import 'layout/department';
+@import 'layout/patient';
+@import 'layout/specialist';
+@import 'layout/hotline';
+@import 'layout/news';
+@import 'layout/footer';
+@import 'layout/departments-page';
+@import 'layout/about';
+@import 'layout/blog-home';
+@import 'layout/blog-details';
+@import 'layout/contact';
+@import 'layout/elements';
+
+// Module
+@import 'module/btn';
+@import 'module/form';
+@import 'module/other';

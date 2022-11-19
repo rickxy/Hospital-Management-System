@@ -1,0 +1,59 @@
+/* 1. Author CSS */
+body {
+    color: $body-text;
+    font-family: $body-font;
+    font-size: 15px;
+    font-weight: 400;
+}
+h1 {
+    color: $heading-text;
+    font-family: $heading-font;
+    font-size: 45px!important;
+    font-weight: 700;
+}
+h2 {
+    color: $heading-text;
+    font-family: $heading-font;
+    font-size: 36px!important;
+    font-weight: 700;
+}
+h3 {
+    color: $heading-text;
+    font-family: $heading-font;
+    font-size: 18px!important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4 {
+    color: $heading-text;
+    font-family: $heading-font;
+    font-size: 16px!important;
+    font-weight: 400;
+}
+h5 {
+    color: $body-text;
+    font-family: $body-font;
+    text-transform: capitalize;
+    font-size: 14px!important;
+    font-weight: 400;
+}
+h6 {
+    color: $body-text; 
+    font-size: 12px!important;
+    font-family: $body-font;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}

@@ -1,0 +1,81 @@
+/* 13. Footer */
+.footer-area {
+    color: $light;
+    background: $footer;
+    h3 {
+        color: $light;
+    }
+    a {
+        color: $light;
+        text-transform: capitalize;
+        @include transition(.3s);
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    input {
+        display: inline-block;
+        margin: auto;
+        width: 250px;
+        border: none;
+        @include border-radius(3px);
+        padding: 10px 20px;
+        @include landscape-phone() {
+            width: 250px;
+        }
+        @include portrait-phone() {
+            width: 100%;
+        }
+    }
+    .template-btn {
+        margin-left: 10px;
+        border: none;
+        width: 170px;
+        @include portrait-phone() {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+    }
+    img {
+        width: 55px;
+        height: 55px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+}
+.footer-copyright {
+    margin-top: 70px;
+    .color {
+        color: $primary-color;
+    }
+    ul {
+        float: right;
+        @include landscape-phone() {
+            float: left;
+            margin-top: 30px;
+        }
+        @include portrait-phone() {
+            float: left;
+            margin-top: 30px;
+        }
+        li {
+            display: inline;
+            margin-left: 10px;
+            i {
+                display: inline-block;
+                padding: 10px;
+                color: $body-text;
+                background: $light;
+                height: 40px;
+                width:40px;
+                text-align: center;
+                line-height: 20px;
+                @include transition(all .3s ease-in-out);
+                &:hover {
+                    color: $light;
+                    background: $gradient;
+                }
+            }
+        }
+    }
+}

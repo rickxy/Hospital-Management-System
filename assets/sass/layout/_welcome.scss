@@ -1,0 +1,27 @@
+/* 7. Welcome */
+.welcome-img {
+    img {
+        width: 120%;
+        position: relative;
+        z-index: 1;
+        @include tablet(){
+            width: 100%;
+        }
+        @include landscape-phone(){
+            width: 100%;
+        }
+        @include portrait-phone(){
+            width: 100%;
+        }
+    }
+}
+.welcome-text {
+    padding: 100px;
+    border: 10px solid $border;
+    @include landscape-phone(){
+        padding: 50px;
+    }
+    @include portrait-phone(){
+        padding: 40px 20px;
+    }
+}

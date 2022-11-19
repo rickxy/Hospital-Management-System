@@ -1,0 +1,46 @@
+/* 2. Preloader */
+.spinner {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+    background-color: $primary-color;
+  
+    border-radius: 100%;  
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+      -webkit-transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes sk-scaleout {
+    0% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 100% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $light;
+    z-index: 5;
+    .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0;
+        @include translate(-50%, -50%);
+    }
+}

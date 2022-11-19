@@ -1,0 +1,19 @@
+/* 5. Banner */
+.banner-area {
+    padding: 400px 0 350px;
+    background-color: $placeholder;
+    background-image: url('../images/banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    @include tablet(){
+        padding: 280px 0;
+    }
+    @include landscape-phone(){
+        padding: 250px 0;
+    }
+    @include portrait-phone(){
+        padding: 200px 0;
+    }
+}

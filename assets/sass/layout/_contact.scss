@@ -1,0 +1,64 @@
+/* 18. Contact */
+
+
+#mapBox {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.info-text {
+    h3 {
+        text-transform: inherit;
+    }
+}
+
+.into-icon {
+    i {
+        font-size: 20px;
+        color: $primary-color;
+        margin-right: 20px;
+    }
+}
+.contact-form,
+.commentform-area {
+    form {
+        .left {
+            width: 48%;
+            float: left;
+            overflow: hidden;
+            margin-right: 4%;
+            @include portrait-phone() {
+                width: 100%;
+                float: none;
+            }
+            input {
+                width: 100%;
+                border: 1px solid $border;
+                padding: 12px 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .right {
+            width: 48%;
+            overflow: hidden;
+            @include portrait-phone() {
+                width: 100%;
+                float: none;
+            }
+            textarea {
+                width: 100%;
+                border: 1px solid $border;
+                padding: 12px 20px;
+            }
+        }
+        button {
+            margin-top: 20px;
+            float: right;
+            border: none;
+            @include portrait-phone() {
+                float: left;
+            }
+        }
+    }
+}

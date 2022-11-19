@@ -1,0 +1,13 @@
+/* 6. Feature */
+.single-feature {
+    background: $dark;
+    @include border-radius(5px);
+    @include transition(.5s);
+    img {
+        margin-bottom: 40px;
+    }
+    &:hover {
+        background: $light;
+        @include box-shadow(0 5px 20px $shadow);
+    }
+}

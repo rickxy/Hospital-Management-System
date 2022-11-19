@@ -1,0 +1,36 @@
+/* 15. Button */
+.template-btn {
+    color: $light;
+    background: $gradient;
+    font-family: $body-font;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 12px 30px!important;
+    @include transition(all .2s ease-in-out);
+    &:hover {
+        color: $light;
+        @include opacity(.8);
+    }
+}
+.news-btn {
+    color: $heading-text;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    @include transition(all .5s ease-in-out);
+    &:hover {
+        color: $primary-color;
+        i {
+            right: -20px;
+        }
+    }
+    i {
+        position: absolute;
+        right: -17px;
+        top: 1px;
+        @include transition(all .2s ease-in-out);
+    }
+}

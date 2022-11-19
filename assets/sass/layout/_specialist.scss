@@ -1,0 +1,56 @@
+/* 10. Specialist */
+.specialist-area {
+    background: $dark;
+    .single-doctor {
+        &:hover {
+            .content-area {
+                @include box-shadow(0 5px 20px $shadow);
+            }
+            .doctor-name {
+                background: $gradient;
+                h3,
+                h6 {
+                    color: $light;
+                }
+            }
+        }
+    }
+    img {
+        @include tablet(){
+            width: 100%;
+        }
+        @include portrait-phone(){
+            width: 100%;
+        }
+    }
+    .content-area {
+        @include box-shadow(0 0 5px $shadow);
+        @include transition(.5s);
+    }
+    .doctor-name {
+        padding: 20px;
+        background: $dark;
+        @include transition(.5s);
+        // h3,
+        // h6 {
+        //     @include transition(.5s);
+        // }
+    }
+    .doctor-text {
+        background: $light;
+        padding: 20px;
+    }
+    .doctor-icon {
+        li {
+            display: inline;
+            margin: 0 7px;
+            a {
+                color: $body-text;
+                @include transition(.3s);
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

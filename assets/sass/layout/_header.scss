@@ -1,0 +1,105 @@
+/* 4. Header */
+.header-top {
+    padding: 10px 0;
+    background: rgba(255,255,255,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    h6 {
+        margin-top: 6px;
+        i {
+          font-size: 18px;
+          position: relative;
+          top: 2px;
+        }
+    }
+    @include tablet(){
+      display: none;
+    }
+    @include landscape-phone(){
+      display: none;
+    }
+    @include portrait-phone(){
+      display: none;
+    }
+    .social-links {
+        ul {
+            float: right;
+            margin-top: 5px;
+            li {
+                display: inline;
+                margin-left: 15px;
+                a {
+                    color: $body-text;
+                    @include transition(all .3s ease-in-out)
+                    &:hover {
+                      color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#header {
+    padding: 14px 0;
+    position: fixed;
+    left: 0;
+    top: 48px;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    @include tablet(){
+      top: 0;
+    }
+    @include landscape-phone(){
+      top: 0;
+    }
+    @include portrait-phone(){
+      top: 0;
+    }
+  }
+  
+  #header.header-scrolled {
+    background:$dark;
+    transition: all 0.5s;
+    top: 0;
+  }
+  
+  @media(max-width:673px){
+    #logo{
+        margin-left:20px;
+    }
+  }
+  
+  #header #logo h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  
+  #header #logo h1 a, #header #logo h1 a:hover {
+    color: #fff;
+    padding-left: 10px;
+    border-left: 4px solid $primary-color;
+  }
+  
+  #header #logo img {
+    padding: 0;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    #header #logo h1 {
+      font-size: 28px;
+    }
+    #header #logo img {
+      max-height: 40px;
+    }
+  }  

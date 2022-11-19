@@ -1,0 +1,34 @@
+/* 11. Hotline */
+.hotline-area {
+    color: $light;
+    background-image: url('../images/hotline-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top right, rgba(36, 76, 253,.9), rgba(21, 228, 253,.9));
+        z-index: -1;
+    }
+    h2 {
+        color: $light;
+    }
+    span {
+        font-size: 56px;
+        font-family: $body-font;
+        font-weight: 900;
+        @include landscape-phone(){
+            font-size: 45px;
+        }
+        @include portrait-phone(){
+            font-size: 45px;
+        }
+    }
+}

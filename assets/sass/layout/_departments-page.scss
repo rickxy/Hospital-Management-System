@@ -1,0 +1,17 @@
+/* 14. Departments Page */ 
+.banner-area.other-page {
+    padding: 220px 0 170px;
+    @include landscape-phone(){
+        padding: 250px 0 100px;
+    }
+    @include portrait-phone(){
+        padding: 250px 0 100px;
+    }
+    a {
+        color: $body-text;
+        @include transition(.3s);
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

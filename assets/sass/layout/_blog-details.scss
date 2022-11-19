@@ -1,0 +1,194 @@
+/* 17. Blog Details */
+.single-post {
+    .social-links {
+        padding-top: 10px;
+        li {
+            display: inline-block;
+            margin-bottom: 10px;
+            a {
+                color: #cccccc;
+                padding: 7px;
+                font-size: 14px;
+                transition: all 0.2s linear;
+                &:hover {
+                    color: $heading-text;
+                }
+            }
+        }
+    }
+    .blog_details{
+        padding-top: 26px;
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    .quotes {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 24px 35px 24px 30px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: -20.84px 21.58px 30px 0px rgba(176, 176, 176, 0.1);
+        font-size: 14px;
+        line-height: 24px;
+        color: #777;
+        font-style: italic;
+    }
+    .arrow {
+        position: absolute;
+        .lnr {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    .thumb {
+        .overlay-bg {
+            background: rgba(#000, .8);
+        }
+    }
+
+    .sidebar-widgets{
+        @media(max-width:991px){
+            padding-bottom:0px;
+        }
+    }
+}
+
+.comments-area {
+    background:#fafaff;
+    border: 1px solid #eee;
+    padding: 50px 30px;
+    margin-top: 50px;
+    @media(max-width: 414px) {
+        padding: 50px 8px;
+    }
+    h4 {
+        text-align: center;
+        margin-bottom: 50px;
+        color: $heading-text;
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    a {
+        color: $heading-text;
+    }
+    .comment-list {
+        padding-bottom: 48px;
+        &:last-child {
+            padding-bottom: 0px;
+        }
+        &.left-padding {
+            padding-left: 25px;
+        }
+        @media(max-width:413px) {
+            .single-comment {
+                h5 {
+                    font-size: 12px;
+                }
+                .date {
+                    font-size: 11px;
+                }
+                .comment {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .thumb {
+        margin-right: 20px;
+    }
+    .date {
+        font-size: 13px;
+        color: #cccccc;
+        margin-bottom: 13px;
+    }
+    .comment {
+        color: #777777;
+        margin-bottom: 0px;
+    }
+    .btn-reply {
+        background-color: #fff;
+        color: $heading-text;
+        border:1px solid #eee;
+        padding: 5px 18px;
+        font-size: 12px;
+        display: block;
+        font-weight:600;
+        @include transition(.3s);
+        &:hover {
+            background: $gradient;
+            color: $light!important;
+        }
+    }
+}
+
+.comment-form {
+    background:#fafaff;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 47px 30px 43px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    h4 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 22px;
+        color: $heading-text;
+    }
+    .name {
+        padding-left: 0px;
+        @media(max-width: 767px) {
+            padding-right: 0px;
+            margin-bottom: 1rem;
+        }
+    }
+    .email {
+        padding-right: 0px;
+        @media(max-width: 991px) {
+            padding-left: 0px;
+        }
+    }
+    .form-control {
+        padding: 8px 20px;
+        background: #fff;
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        font-size: 14px;
+        color: #777777;
+        border: 1px solid transparent;
+        &:focus {
+            box-shadow: none;
+            border: 1px solid #eee;
+        }
+    }
+    textarea{
+        &.form-control{
+            height: 140px;
+			resize: none;
+        }
+    }
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        font-size: 13px;
+        color: #777;
+    }
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        font-size: 13px;
+        color: #777;
+    }
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        font-size: 13px;
+        color: #777;
+    }
+    :-moz-placeholder {
+        /* Firefox 18- */
+        font-size: 13px;
+        color: #777;
+    }
+}

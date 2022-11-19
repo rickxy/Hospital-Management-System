@@ -1,0 +1,32 @@
+/* 12. News */
+.news-area {
+    .news-date {
+        color: $light;
+        background: $primary-color;
+        padding: 12px 30px;
+        display: inline-block;
+        position: relative;
+        top: -25px;
+        left: 30px;
+    }
+    h3 {
+        a {
+            color: $heading-text;
+            @include transition(.3s);
+        }
+    }
+    img {
+        @include landscape-phone(){
+            width: 100%;
+        }
+    }
+    .single-news {
+        &:hover {
+            h3 {
+                a {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
