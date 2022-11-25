@@ -8,7 +8,6 @@
 
     <!-- Page Title -->
     <title>Hospital Management System</title>
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
     <!-- CSS Files -->
