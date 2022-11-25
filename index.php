@@ -44,7 +44,6 @@
         </div>
     </header>
     <!-- Header Area End -->
-
     <!-- Banner Area Starts -->
     <section class="banner-area">
         <div class="container">
