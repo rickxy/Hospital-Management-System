@@ -24,7 +24,6 @@
         <div class="spinner"></div>
     </div>
     <!-- Preloader End -->
-
     <!-- Header Area Starts -->
     <header class="header-area">
         <div id="header" id="home">
