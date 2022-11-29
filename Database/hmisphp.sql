@@ -35,6 +35,7 @@ CREATE TABLE `his_accounts` (
   `acc_amount` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
 --
 -- Dumping data for table `his_accounts`
 --
