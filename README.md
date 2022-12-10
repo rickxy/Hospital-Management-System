@@ -9,6 +9,6 @@ This Facility Management System Project in PHP, in particular, is primarily conc
 **Doctor Login Details**
 
 * ID      : YDS7L
-* Password: password
+
 
 
