@@ -4,13 +4,12 @@ This Facility Management System Project in PHP, in particular, is primarily conc
 
 **Admin Login Details**
 * Email   : admin@mail.com 
-* Password: (Password on the YouTube video)
+* Password: 
 
 **Doctor Login Details**
 
 * ID      : YDS7L
-* Password: (Password on the YouTube video)
+* Password:
 
-On how to set up check the YouTube video 👇👇
 #
 
